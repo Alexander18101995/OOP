@@ -47,6 +47,26 @@ class Student:
       return self.avg_grades < other.avg_grades
 
 some_student = Student(best_student[0],best_student[1],avg_grades(avg_grades_student_git(grades_student_git),avg_grades_student_python(grades_student_python)))
+class Mentor:
+    def __init__(self, name, surname):
+        self.name = name
+        self.surname = surname
+        self.courses_attached = []
+
+    def __str__(self):
+      return f'Имя: {self.name}\nФамилия: {self.surname}'
+name_mentor = Mentor(cool_mentor[0],cool_mentor[1])
+
+class Reviewe(Mentor):
+    def __init__ (self,name,last_name):
+        self.name = name
+        self.last_name = last_name
+        self.student_grades
+
+    def __str__(self):
+      return f'Имя: {self.name}\nФамилия: {self.surname}'
+some_reviewe = Mentor(cool_mentor[0],cool_mentor[1])
+
 class Lecturer:
     def __init__ (self,name,last_name,avg_grades):
         self.name = name
@@ -58,8 +78,13 @@ some_lecturer = Lecturer(cool_mentor[0],cool_mentor[1],avg_grades(avg_grades_lec
 def __lt__(self, other):
   return self.avg_grades < other.avg_grades
 
+print(some_reviewe)
 print()
 print(some_lecturer)
 print()
 print(some_student)
 print(some_student < some_lecturer )
+
+
+
+
